@@ -6,6 +6,7 @@ const CharactersContext = createContext();
 const CharactersProvider = ({ children }) => {
     const [items, setItems] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [charId, setCharId] = useState(null);
     
     useEffect(() => {
         const getCharacters = async () => {
@@ -17,12 +18,17 @@ const CharactersProvider = ({ children }) => {
         getCharacters();
     }, [])
 
+    const handleCharId = id => {
+        setCharId(id);
+    }
+
     return (
         <CharactersContext.Provider
             value={{
                 items,
                 loading,
                 setLoading,
+                handleCharId,
             }}
         >
             {children}

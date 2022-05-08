@@ -1,5 +1,4 @@
 import Grid from '@mui/material/Grid';
-import Details from './Details';
 import useCharacters from '../hooks/useCharacters'
 import Character from './Character';
 import Spinner from './Spinner';

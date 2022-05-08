@@ -37,3 +37,17 @@ header {
     transform: rotate(359deg);
   }
 }
+
+.card.MuiCard-root {
+  background-color: #262222de;
+}
+
+.card .MuiTypography-root {
+  color: #e9e3d3;
+  font-weight: 700;
+}
+
+.card .MuiTypography-subtitle1 {
+  color: #c5ac6a;
+  font-weight: 400;
+}
