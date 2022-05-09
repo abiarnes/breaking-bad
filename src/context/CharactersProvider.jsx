@@ -8,6 +8,7 @@ const CharactersProvider = ({ children }) => {
     const [loading, setLoading] = useState(true);
     const [charId, setCharId] = useState(null);
     const [selected, setSelected] = useState({});
+    const [modal, setModal] = useState(false);
 
     const baseUrl = 'https://www.breakingbadapi.com/api';
     
@@ -31,11 +32,14 @@ const CharactersProvider = ({ children }) => {
         }
         getDetails();
     }, [charId])
-
-    console.log(selected, 'mamamaa');
-
+  
+    
     const handleCharId = id => {
         setCharId(id);
+    }
+
+    const handleModalClick = () => {
+        setModal(!modal);
     }
 
     return (
@@ -45,7 +49,9 @@ const CharactersProvider = ({ children }) => {
                 loading,
                 setLoading,
                 handleCharId,
-                selected
+                selected,
+                modal,
+                handleModalClick,
             }}
         >
             {children}

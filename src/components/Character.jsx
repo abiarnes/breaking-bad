@@ -3,36 +3,28 @@ import {
   Card,
   CardContent,
   CardMedia,
-  // Link,
   Typography,
 } from '@mui/material';
-import { Link, useHistory } from 'react-router-dom';
-import notFoundChar from '../media/char-not-found.jpg';
 import useCharacters from '../hooks/useCharacters';
 
 const Character = ({ item }) => {
   const { char_id, img, name, portrayed } = item;
-  const { handleCharId } = useCharacters() || {};
-
-  const handleUrl = () => {
-    let history = useHistory();
-    history.push('/details');
-  };
-
-  const handleClick = () => {
-    () => handleCharId(char_id);
-    console.log(char_id)
-    // handleUrl();
-  };
+  const { handleCharId, handleModalClick, handleCharName } = useCharacters() || {};
 
   return (
     <Grid item md={5} lg={3}>
-      <Card className="card" onClick={() => handleCharId(char_id)}>
-        <Link to="/details">
+        <Card
+        className="card"
+        onClick={() => {
+          handleModalClick()
+          handleCharId(char_id)
+          handleCharName(name)
+        }}
+      >
           <CardMedia
             component="img"
             alt={`Imagen de la noticia ${name}`}
-            image={img ? img : notFoundChar}
+            image={img}
             height={250}
             sx={{
               objectFit: 'contain',
@@ -49,8 +41,7 @@ const Character = ({ item }) => {
               {portrayed}
             </Typography>
           </CardContent>
-        </Link>
-      </Card>
+      </Card>    
     </Grid>
   );
 };

@@ -51,10 +51,27 @@ header {
   color: #c5ac6a;
   font-weight: 400;
 }
-/* 
-.details-container.MuiContainer-root {
-  height: 100vh;
+
+.MuiPaper-root.MuiDialog-paper {
+  background-image: url(./media/background-modal.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.MuiButtonBase-root.css-1d6w9lk-MuiButtonBase-root-MuiIconButton-root {
+  background-color: goldenrod;
+  margin: 3%;
+}
+
+.MuiContainer-root.details-wrapper {
   display: flex;
-  justify-content: center;
-  align-items: center;
-} */
+  background: #00000073;
+  border-radius: 15px;
+  margin-top: 5%;
+}
+
+.details-wrapper .MuiContainer-root {
+  padding: 3%;
+}

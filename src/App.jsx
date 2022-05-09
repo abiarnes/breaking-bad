@@ -1,8 +1,9 @@
 import { Container } from '@mui/material';
 import Header from './components/Header';
 import List from './components/List';
-import { CharactersProvider } from './context/CharactersProvider';
+import Modal from './components/Modal';
 
+import { CharactersProvider } from './context/CharactersProvider';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Header />
         <Container>
           <List />
+          <Modal />
         </Container>
       </CharactersProvider>
   );
