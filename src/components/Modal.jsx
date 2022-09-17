@@ -31,10 +31,9 @@ const Modal = () => {
             <img src={closeButton} height={60} />
           </IconButton>
           <Typography
-            sx={{ ml: 2, flex: 1 }}
+            sx={{ ml: 2, flex: 1, color: 'white' }}
             variant="h3"
             component="div"
-            sx={{ color: 'white' }}
           >
             {name} - {portrayed}
           </Typography>
