@@ -1,4 +1,4 @@
-# breaking-bad
+# Breaking Bad Characters App
 
 ReactJS App created with Vite using Context API, MaterialUI and Breaking Bad API.
 
