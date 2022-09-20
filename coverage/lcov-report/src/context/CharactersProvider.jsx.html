@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">6.89% </span>
+                <span class="strong">44.82% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>2/29</span>
+                <span class='fraction'>13/29</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">14.28% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/7</span>
+                <span class='fraction'>1/7</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">7.14% </span>
+                <span class="strong">46.42% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>2/28</span>
+                <span class='fraction'>13/28</span>
             </div>
         
             
@@ -129,29 +129,18 @@
 <a name='L64'></a><a href='#L64'>64</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -161,16 +150,27 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -194,16 +194,16 @@ import axios from "axios";
 &nbsp;
 const CharactersContext = createContext();
 &nbsp;
-const CharactersProvider = <span class="fstat-no" title="function not covered" >({</span> children }) =&gt; {
-    const [items, setItems] = <span class="cstat-no" title="statement not covered" >useState([]);</span>
-    const [loading, setLoading] = <span class="cstat-no" title="statement not covered" >useState(true);</span>
-    const [charId, setCharId] = <span class="cstat-no" title="statement not covered" >useState(null);</span>
-    const [selected, setSelected] = <span class="cstat-no" title="statement not covered" >useState({});</span>
-    const [modal, setModal] = <span class="cstat-no" title="statement not covered" >useState(false);</span>
+const CharactersProvider = ({ children }) =&gt; {
+    const [items, setItems] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [charId, setCharId] = useState(null);
+    const [selected, setSelected] = useState({});
+    const [modal, setModal] = useState(false);
 &nbsp;
-    const baseUrl = <span class="cstat-no" title="statement not covered" >'https://www.breakingbadapi.com/api';</span>
+    const baseUrl = 'https://www.breakingbadapi.com/api';
     
-<span class="cstat-no" title="statement not covered" >    useEffect(<span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+    useEffect(<span class="fstat-no" title="function not covered" >()</span> =&gt; {
         const getCharacters = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >as</span>ync () =&gt; {</span>
             const url = <span class="cstat-no" title="statement not covered" >`${baseUrl}/characters`;</span>
             const { data } = <span class="cstat-no" title="statement not covered" >await axios(url);</span>
@@ -213,7 +213,7 @@ const CharactersProvider = <span class="fstat-no" title="function not covered" >
 <span class="cstat-no" title="statement not covered" >        getCharacters();</span>
     }, []);
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    useEffect(<span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+    useEffect(<span class="fstat-no" title="function not covered" >()</span> =&gt; {
         const getDetails = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >as</span>ync () =&gt; {</span>
 <span class="cstat-no" title="statement not covered" >            if(!charId) <span class="cstat-no" title="statement not covered" >return</span></span>
             const url = <span class="cstat-no" title="statement not covered" >`${baseUrl}/characters/${charId}`;</span>
@@ -225,15 +225,15 @@ const CharactersProvider = <span class="fstat-no" title="function not covered" >
     }, [charId])
   
     
-    const handleCharId = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >id</span> =&gt; {</span>
+    const handleCharId = <span class="fstat-no" title="function not covered" >id</span> =&gt; {
 <span class="cstat-no" title="statement not covered" >        setCharId(id);</span>
     }
 &nbsp;
-    const handleModalClick = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+    const handleModalClick = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
 <span class="cstat-no" title="statement not covered" >        setModal(!modal);</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    return (</span>
+    return (
         &lt;CharactersContext.Provider
             value={{
                 items,
@@ -259,7 +259,7 @@ export default CharactersContext;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2022-09-19T17:17:24.725Z
+                at 2022-09-20T12:56:09.317Z
             </div>
         <script src="../../prettify.js"></script>
         <script>

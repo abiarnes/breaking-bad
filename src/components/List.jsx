@@ -6,7 +6,7 @@ import Spinner from './Spinner';
 const List = () => {
     const { items, loading } = useCharacters();
     return loading ? <Spinner /> : (
-        <div>
+        <div data-testid='list_id'>
             <Grid
                 container
                 spacing={2}
