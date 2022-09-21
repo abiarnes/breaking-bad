@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   Grid,
   Card,
@@ -14,6 +15,7 @@ const Character = ({ item }) => {
   return (
     <Grid item md={5} lg={3}>
         <Card
+        data-testid='card_id'
         className="card"
         onClick={() => {
           handleModalClick()
@@ -22,8 +24,9 @@ const Character = ({ item }) => {
         }}
       >
           <CardMedia
+            role="menuitem"
             component="img"
-            alt={`Imagen de la noticia ${name}`}
+            alt={`Image of the character ${name}`}
             image={img}
             height={250}
             sx={{

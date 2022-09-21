@@ -4,4 +4,12 @@ module.exports = {
     "\\.(css|less)$": "<rootDir>/mocks/fileMock.js"
   },
   testEnvironment: "jest-environment-jsdom",
+  maxWorkers: "50%",
+  automock: false,
+  modulePaths: ["<rootDir>"],
+  testPathIgnorePatterns: [
+    "/node_modules/",
+    "/lib/"
+  ],
+  testRegex: "/__tests__/.+\\.test\\.(js|jsx)$",  
 }

@@ -3,10 +3,10 @@ import logo from '../media/logo1.png';
 
 const Header = () => {
     return (
-        <header data-testid="header">
+        <header data-testid="header_id">
             <img
                 src={logo}
-                alt=''
+                alt='Breaking-Bad'
                 height={300}
                 className='logo'
             />

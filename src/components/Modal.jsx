@@ -20,13 +20,19 @@ const Modal = () => {
   return (
     <div>
     <Grid item md={5} lg={3}>
-      <Dialog fullScreen open={modal} onClose={handleModalClick}>
+      <Dialog
+        fullScreen
+        open={modal}
+        onClose={handleModalClick}
+        data-testid='modal_id'
+      >
         <Toolbar>
           <IconButton
             edge="start"
             color="inherit"
             onClick={handleModalClick}
             aria-label="close"
+            data-testid="close_btn"
           >
             <img src={closeButton} height={60} />
           </IconButton>
