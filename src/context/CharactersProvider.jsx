@@ -29,7 +29,6 @@ const CharactersProvider = ({ children }) => {
             const url = `${baseUrl}/characters/${charId}`;
             const { data } = await axios(url);
             setSelected(data[0]);
-            console.log(selected);
         }
         getDetails();
     }, [charId])

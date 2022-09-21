@@ -46,24 +46,5 @@
         4,
         5
     ]
-  },
-  {
-    "char_id": 15,
-    "name": "Todd Alquist",
-    "birthday": "Unknown",
-    "occupation": [
-        "Lab Assistant",
-        "Enforcer",
-        "Meth Cook"
-    ],
-    "img": "https://vignette.wikia.nocookie.net/breakingbad/images/9/95/Todd_brba5b.png/revision/latest?cb=20130717134303",
-    "status": "Deceased",
-    "nickname": "Ricky Hitler",
-    "appearance": [
-        5
-    ],
-    "portrayed": "Jesse Plemons",
-    "category": "Breaking Bad",
-    "better_call_saul_appearance": []
   }
 ]
