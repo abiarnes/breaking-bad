@@ -6,7 +6,7 @@ const Header = () => {
         <header data-testid="header_id">
             <img
                 src={logo}
-                alt=''
+                alt='Breaking-Bad'
                 height={300}
                 className='logo'
             />

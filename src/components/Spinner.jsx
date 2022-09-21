@@ -1,3 +1,4 @@
+import React from 'react';
 import spinner from '../media/spinner.webp'
 
 const Spinner = () => {

@@ -32,6 +32,7 @@ const Modal = () => {
             color="inherit"
             onClick={handleModalClick}
             aria-label="close"
+            data-testid="close_btn"
           >
             <img src={closeButton} height={60} />
           </IconButton>
